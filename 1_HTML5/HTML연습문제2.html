@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>납품자 정보</legend>
+      1. 납품자명 : <input type="text" name="supplier_name"><br><br>
+      2. email : <input type="email" name="supplier_email"><br><br>
+      3. 홈페이지 : <input type="url" name="supplier_homepage"><br><br>
+      4. 지역 : 
+      <select name="supplier_region">
+        <option value="서울">서울</option>
+        <option value="부산" selected>부산</option>
+        <option value="대구">대구</option>
+        <option value="인천">인천</option>
+        <option value="광주">광주</option>
+      </select><br><br>
+    </fieldset>
+  </form>
+  <br>
+  
+  <form>
+    <fieldset>
+      <legend>납품 정보</legend>
+      <ul>
+      <li>상품명 : <input type="text" name="product_name"></li><br>
+      <li>납품수량 : <input type="number" name="supply_amount" min="100" max="1000" placeholder="최소 100"></li><br>
+      <li>납품등급 : <input type="range" name="supply_grade" min="1" max="5" value="3"></li><br>
+      <li>기타사항 : <textarea name="etc" rows="4" cols="30"></textarea></li><br>
+      </ul>
+    </fieldset>
+  </form>
+  <br>
+  <button>send message</button>
+
+</body>
+</html>

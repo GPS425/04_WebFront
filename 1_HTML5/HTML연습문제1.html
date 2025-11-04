@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  고객명 : <input type="text" name="cust_name"><br><br>
+  전화번호 : <input type="tel" name="cust_tel"><br><br>
+  E-mail : <input type="email" name="cust_email"><br><br>
+
+  피자선택 : <select name="pizza_type">
+    <option value="피자를 선택하세요">피자를 선택하세요</option>
+    <option value="치즈피자">치즈피자</option>
+    <option value="불고기피자">불고기피자</option>
+    <option value="포테이토피자">포테이토피자</option>
+    <option value="콤비네이션피자">콤비네이션피자</option>
+  </select><br>
+
+  <form>
+    <fieldset>
+      <legend>피자 사이즈</legend>
+      <label for="small">Small</label> 
+      <input type="radio" name="size" id="small" value="small"><br><br>
+      <label for="medium">Medium</label>
+      <input type="radio" name="size" id="medium" value="medium"><br><br>
+      <label for="large">Large</label>
+      <input type="radio" name="size" id="large" value="large"><br><br>
+    </fieldset>
+  </form>
+
+  <form>
+    <fieldset>
+      <legend>토핑 선택</legend>
+      <label for="베이컨">베이컨</label>
+      <input type="checkbox" name="topping" id="베이컨" value="베이컨"><br><br>
+      <label for="치즈">치즈</label>
+      <input type="checkbox" name="topping" id="치즈" value="치즈"><br><br>
+      <label for="양파">양파</label>
+      <input type="checkbox" name="topping" id="양파" value="양파"><br><br>
+      <label for="버섯">버섯</label>
+      <input type="checkbox" name="topping" id="버섯" value="버섯"><br><br>
+    </fieldset>
+  </form>
+
+  희망배송시간 : <input type="time" name="delivery_time"><br><br>
+
+  배송시 요청사항:
+  <textarea name="request" rows="3" cols="20"></textarea><br><br>
+
+  <button>주문하기</button>
+  
+</body>
+</html>
