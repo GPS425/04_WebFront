@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시맨틱 태그</title>
+  <link rel="stylesheet" href="css/시맨틱.css">
+  <script src="https://kit.fontawesome.com/16120060ef.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!--
+    시맨틱(Semantic, 의미) 태그
+    - 태그 이름 자체가 해당 요소의 의미와 역할을 명확히 나타내는 태그
+
+    - 기존 영역 분할에 주로 사용되던 div, span 등의 태그는
+    태그 이름만 봤을 때 나눈다는 것 이외의 의미를 파악할 수 없음.
+    -> 태그만 봤을 때 태그의 목적을 알 수 없어
+    id 또는 class를 반드시 추가해야 했다.
+
+    이런 문제점을 해결하고자
+    태그 이름만으로 어느정도 어떤 역할을 하는지 알 수 있고,
+    웹 접근성(SEO : Search Engine Optimization)을
+    향상하는데 도움이 되는 시맨틱 태그가 추가됨.
+
+    [제공하는 태그]
+
+    header 태그 : 문서의 제목, 머리말 영역
+    footer 태그 : 문서의 하단 부분, 꼬리말, 정보 작성 영역
+    nav 태그 : 나침반 역할(다른페이지, 사이트 이동)의 링크 작성 영역
+    main 태그 : 한 페이지에 한 번만 사용해야 하며, 문서의 핵심 콘텐츠를 감싸는 역할
+    section 태그 : 구역 구문을 위한 영역
+    article 태그 : 본문과 독립된 콘텐츠를 작성하는 영역( 블로그 포스트, 뉴스 기사, 사용자 리뷰 등 독립적으로 배포할 수 있는 콘텐츠를 감쌀 때 )
+    aside 태그 : 사이드바(보통 양쪽), 광고 영역
+-->
+
+<main>
+  <header>
+    <section>
+      <!-- 클릭 시 메인페이지로 이동하는 로고 -->
+      <a href="#">
+        <img src="../images/logo.jpg" id="home-logo">
+      </a>
+    </section>
+    <section>
+      <!-- 검색창 부분 -->
+      <section class="search-area">
+        <!-- form 내부 input 태그값을 서버로 제출/전달 -->
+        <form action="#" method="get" name="search-form">
+          <fieldset> <!-- form 내부에서 input을 종류별로 묶는 용도로 자주 사용-->
+            <!-- autocomplete : HTML 기본 자동완성 사용 >> off: 사용 안함 -->
+            <input type="search" id="query" name="query" placeholder="검색어를 입력해주세요."
+            autocomplete="off">
+            <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+          </fieldset>
+        </form>
+      </section>
+    </section>
+    <section></section> <!-- 빈 부분 -->
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#">공지사항</a></li>
+      <li><a href="#">자유게시판</a></li>
+      <li><a href="#">질문게시판</a></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">1:1문의</a></li>
+    </ul>
+  </nav>
+  <section class="content">
+    <!-- 메인 콘텐트(기사) 작성 영역 -->
+    <section class="content-1">
+      <div class="content-item">
+        <div>
+          <img src="/images/flowers/flower1.jpg">
+        </div>
+        <h1>
+          <a href="#">[속보]일본이 놀라고 중국이 질투하고 미국이 부러워하는...</a>
+        </h1>
+        <p>
+          국뽕채널, 국뽕튜브, 국뽕티비라고도 한다. 이들은 영상을 조작하여 가짜 뉴스를 만드는 행위로 악명이 높다.
+
+          지속적으로 기성 선진국에게 인정받고 싶은 심리, 타국과 비교해서 자국의 우월성을 찾고 싶어하는 심리에 기반한다. 이러한 심리는 타국을 지나치게 비하하고 자국을 신격화하는 국뽕의 탄생으로 이어지게 된다. WWUK를 비롯한 혐한 일뽕이나 헬조선 등으로 대표되는 자국 혐오적인 분위기도 이들의 성행에 한 몫한다.
+
+          이런 채널들이 난무하게 된 시기는 실제로도 2010년대 중후반 이후 신곡이 나올 때마다 빌보드를 석권하는 방탄소년단, 봉준호 감독의 아카데미 작품상 수상, 코로나19 펜데믹 당시 한국의 발빠른 대처 등을 통해 한국이 해외 뉴스에 나오는 경우가 많아졌기 때문이기도 한데, 몇몇 유튜버들이 해외 기사를 번역하여 유튜브 영상으로 소개한 것이 관심을 받게 되었고, 이런 흐름에 편승한 이들의 조회수 역시 좋았던지라 본래는 다른 콘텐츠로 영상을 올리다가 이들의 성공을 보고 국뽕코인에 탑승한 유튜버들 역시 많이 보인다.
+
+          또한 유튜브의 구조적인 문제 역시 있는데, 유튜브의 경우 시청 연령대가 높을수록 조회수당 수익을 높게 쳐주는데, 국뽕 유튜브의 경우 채널 특성상 40대 이상의 시청자들이 많고, 특히 터무니 없는 수준의 국뽕 채널들은 60대 이상 노인남성들이 주 시청층이다. 이들이 현재 한국인의 과반수를 차지하기에 수익이 좀 더 많이 쌓이는 편이다.
+        </p>
+      </div>
+      <div class="content-item">
+        <div>
+          <img src="/images/minecraft.jpeg">
+        </div>
+        <h1>
+          <a href="#">[바이러스 X] 마인크래프트 1.16.1 립버전 드롭박스 무료 apk 다운로드</a>
+        </h1>
+        <p>
+          마인크래프트 립버전 1.16.1다운 마인크래프트 립버전 1.16.1다운 있을 것 같았다. 그건 실로 벅찬 감격이었다.고마워요 스티브. 덕분에 마음이 아주 편해졌어요.고마워할 필요는 없어.알렉스는 미소지으며 손을 내밀었다. 스티브는 기쁜 얼굴로 악수를
+
+          리를 질렀다. 이건....정말 상황 파악이 느린 녀석이로군. 네가 지금 어디에 마인크래프트 립버전 1.16.1다운 알기나 하는 거야 어리광을 받아주는 것도 여기까지다. 어서 이름이나 말해 어디서 감히 소리를 마인크래프트 립버전 1.16.1다운 지르나 천한
+
+          입구가 녹슬어 엉겨붙은 문을 열어 부지내를 마차가 마인크래프트 립버전 1.16.1다운 저택으로 향하는 길만은 어떻게든 풀사리도 되어 있는 것 같지만 마인크래프트 립버전 1.16.1다운 그것을 조금이라도 빗나가면자 거칠어지는 대로의 풀숲뿐만. 그런
+
+        </p>
+      </div>
+    </section>
+    <!-- 아이디/비밀번호 로그인 영역 -->
+    <section class="content-2"></section>
+  </section>
+</main>
+<footer>
+
+</footer>
+
+</body>
+</html>

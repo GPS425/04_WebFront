@@ -1,0 +1,119 @@
+/* color 속성 */
+
+#color-ul > li {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#color-ul > li:nth-child(1) {
+  color: red;
+}
+
+#color-ul > li:nth-child(2) {
+  color: #5620f7;
+}
+
+#color-ul > li:nth-child(3) {
+  color: rgb(0, 0, 255);
+}
+
+#color-ul > li:nth-child(4) {
+  color: rgba(255, 0, 255, 0.5);
+}
+
+#color-ul > li:nth-child(5) {
+  color: hsl(120, 100%, 50%);
+}
+
+#color-ul > li:nth-child(6) {
+  color: hsla(240, 100%, 50%, 0.5);
+}
+
+/* text-decoration 속성 */
+#deco-ul > li:nth-child(1) {
+  text-decoration: underline;
+}
+
+#deco-ul > li:nth-child(2) {
+  text-decoration: line-through;
+}
+
+#deco-ul > li:nth-child(3) {
+  text-decoration: overline;
+}
+
+#deco-ul > li:nth-child(4) > a{
+  text-decoration: none;
+}
+
+#align-test > p:nth-child(1) {
+  text-align: left;
+}
+
+#align-test > p:nth-child(2) {
+  text-align: center;
+}
+
+#align-test > p:nth-child(3) {
+  text-align: right;
+}
+
+#align-test > p:nth-child(4) {
+  text-align: justify;
+}
+
+/* line-height 속성 */
+#line-test > p:last-child {
+  line-height: 30px;
+}
+
+#center-test {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+  
+}
+
+#center-test > span {
+  line-height: 200px;
+}
+
+/* letter-spacing 속성 */
+#letter-test > p {
+  letter-spacing: 10px;
+}
+
+/* text-shadow 속성 */
+#shadow-test > p {
+  background-color: black;
+  padding : 30px;
+}
+
+#shadow-test > p{
+  font-size: 75px;
+  font-weight: bold;
+}
+
+#shadow-test > p:nth-child(1) {
+  color: orange;
+  text-shadow: 3px 3px white;
+  /* 텍스트를 기준으로
+  오른쪽 아래로 3px, 3px 이동한 위치에 흰색 그림자를 추가 */
+}
+
+#shadow-test > p:nth-child(2) {
+  color: white;
+  text-shadow: 5px 5px 5px #bbb;
+  /* 텍스트를 기준으로
+  오른쪽 아래로 5px, 5px 이동한 위치에
+  반경 5px의 흐림 효과를 가진 회색(#bbb) 그림자를 추가 */
+}
+
+#shadow-test > p:nth-child(3) {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 10px magenta;
+  /* 텍스트를 기준으로
+  그림자가 퍼져나가는 효과를 주어
+  반경 10px의 흐림 효과를 가진 마젠타 그림자를 추가 */
+}
