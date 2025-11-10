@@ -47,7 +47,7 @@ nav.menu {
 }
 
 nav.menu a {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: bold;
   color: #f1f3f5;
   padding: 8px;
@@ -97,7 +97,7 @@ nav.menu a {
   display: flex;
   align-items: center;
   background-color: black;
-  border: 1px solid #868b94;
+  border: 1px solid #3a3d42;
   border-radius: 25px;
   padding: 8px 12px;
   gap: 10px;
@@ -156,14 +156,14 @@ nav.keywords {
 .popular-title {
   font-weight: bold;
   color: #868b94;
-  font-size: 14px;
+  font-size: 13px;
   white-space: nowrap;
 }
 
 nav.keywords a {
-    color: #f1f3f5;
-    font-size: 14px;
-    white-space: nowrap;
+  color: #f1f3f5;
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 .titles {
@@ -317,7 +317,7 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked {
-    border-color: #FF6F0F; 
+  border-color: #FF6F0F; 
 }
 
 input[type="radio"]::before {
@@ -335,12 +335,12 @@ input[type="radio"]:checked::before {
 }
 
 .see-more {
-    background: transparent;
-    border: none;
-    color: #FF6F0F;
-    cursor: pointer;
-    padding: 5px 0;
-    font-size: 15px;
+  background: transparent;
+  border: none;
+  color: #FF6F0F;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 15px;
 }
 
 .price-buttons {
@@ -396,68 +396,69 @@ input[type="radio"]:checked::before {
 }
 
 .apply-btn {
-    background: transparent;
-    border: none;
-    color: #f1f3f5;
-    text-decoration: underline;
-    cursor: pointer;
-    padding: 0 5px;
-    font-size: 14px;
+  background: transparent;
+  border: none;
+  color: #f1f3f5;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 14px;
 }
 
 .product-list-container {
-    flex-grow: 1; 
-    min-width: 0; 
+  flex-grow: 1; 
+  min-width: 0; 
 }
 
 .product-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 30px 20px; 
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 40px 20px; 
 }
 
 .product-item a {
-    display: block;
+  display: block;
 }
 
 .product-item .product-image {
-    width: 100%;
-    aspect-ratio: 1 / 1; 
-    border: 1px solid #3a3d42;
-    border-radius: 8px;
-    overflow: hidden; 
-    position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+  border: 1px solid #3a3d42;
+  border-radius: 8px;
+  overflow: hidden; 
+  position: relative;
 }
 
 .product-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .product-info {
-    padding-top: 15px; 
+  padding-top: 15px; 
 }
 
 .product-info .title {
-    font-size: 15px;
-    font-weight: normal;
-    margin: 0 0 5px 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0 0 5px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .product-info .price {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0 0 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
 }
 
 .product-info .data {
-    font-size: 13px;
-    color: #868b94;
-    margin: 0;
+  font-size: 13px;
+  color: #868b94;
+  margin: 0;
 }
 
 
