@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrot</title>
+  <link rel="stylesheet" href="css/CarrotCss.css">
+  <script src="https://kit.fontawesome.com/16120060ef.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <main>
+    <header>
+      <section>
+        <a href="#">
+          <img src="../images/Carrot.PNG" id="home-logo">
+        </a>
+      </section>
+        <nav class="menu">
+          <ul>
+              <a href="#">중고거래</a>
+              <a href="#">부동산<i class="fa-solid fa-angle-down"></i></a>
+              <a href="#">중고차<i class="fa-solid fa-angle-down"></i></a>
+              <a href="#">알바<i class="fa-solid fa-angle-down"></i></a>
+              <a href="#">동네업체</a>
+              <a href="#">동네생활</a>
+              <a href="#">모임</a>
+          </ul>
+        </nav>
+          <section>
+          <button class="download-btn">앱 다운로드</button>
+          </section>
+    </header>
+
+    <section id="search-section-container">
+      <div class="search-row">
+        <button type="button" class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>역삼동</span>
+        </button>
+
+        <form method="get" name="search" class="search-form">
+          <div class="search-bar">
+            <button type="button" class="category">
+              <span>중고거래</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <span class="divider"></span>
+
+            <input type="search" id="query" name="query"
+            placeholder="검색어를 입력해주세요" autocomplete="off">
+            <button type="submit" class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <nav class="keywords">
+        <span class="popular-title">인기 검색어</span>
+        <a href="#">에어컨</a>
+        <a href="#">자전거</a>
+        <a href="#">아이폰</a>
+        <a href="#">컴퓨터</a>
+        <a href="#">냉장고</a>
+        <a href="#">굿즈</a>
+        <a href="#">플스</a>
+        <a href="#">닌텐도</a>
+        <a href="#">다이슨</a>
+        <a href="#">캠핑</a>
+        <a href="#">포토카드</a>
+        <a href="#">에어팟</a>
+        <a href="#">버즈</a>
+        <a href="#">스타벅스</a>
+        <a href="#">삼성</a>
+        <a href="#">다이소</a>
+      </nav>
+    </section>
+
+    <nav class="titles">
+      <a href="#">홈</a>
+      <span>></span>
+      <a href="#">중고거래</a>
+    </nav>
+    <h2 class="main-content-title">서울특별시 강남구 역삼동 중고거래</h2>
+
+    <div class="content-body">
+      <aside class="filters">
+        <div class="filter-header">
+          <h3>필터</h3>
+          <button type="button" class="reset-btn">초기화</button>
+        </div>
+
+        <div class="filter-group">
+          <label class="custom-checkbox-label">
+            <input type="checkbox">
+            <span class="custom-checkbox"></span>
+            거래가능만 보기
+          </label>
+        </div>
+
+        <div class="filter-group">
+          <h4>위치</h4>
+          <ul>
+            <li><label><input type="radio" name="location" checked> 역삼동</label></li>
+            <li><label><input type="radio" name="location"> 대치동</label></li>
+            <li><label><input type="radio" name="location"> 청담동</label></li>
+            <li><label><input type="radio" name="location"> 논현동</label></li>
+            <li><label><input type="radio" name="location"> 삼성동</label></li>
+            <li><label><input type="radio" name="location"> 압구정동</label></li>
+          </ul>
+          <button type="button" class="see-more">더보기</button>
+        </div>
+
+        <div class="filter-group">
+          <h4>카테고리</h4>
+          <ul>
+            <li><label><input type="radio" name="category"> 디지털기기</label></li>
+            <li><label><input type="radio" name="category"> 생활가전</label></li>
+            <li><label><input type="radio" name="category"> 가구/인테리어</label></li>
+            <li><label><input type="radio" name="category"> 생활/주방</label></li>
+            <li><label><input type="radio" name="category"> 유아동</label></li>
+            <li><label><input type="radio" name="category"> 유아도서</label></li>
+            <li><label><input type="radio" name="category"> 여성의류</label></li>
+            <li><label><input type="radio" name="category"> 여성잡화</label></li>
+            <li><label><input type="radio" name="category"> 남성패션/잡화</label></li>
+            <li><label><input type="radio" name="category"> 뷰티/미용</label></li>
+            <li><label><input type="radio" name="category"> 스포츠/레저</label></li>
+            <li><label><input type="radio" name="category"> 취미/게임/음반</label></li>
+            <li><label><input type="radio" name="category"> 도서</label></li>
+            <li><label><input type="radio" name="category"> 티켓/교환권</label></li>
+            <li><label><input type="radio" name="category"> 가공식품</label></li>
+            <li><label><input type="radio" name="category"> 건강기능식품</label></li>
+            <li><label><input type="radio" name="category"> 반려동물용품</label></li>
+            <li><label><input type="radio" name="category"> 식물</label></li>
+            <li><label><input type="radio" name="category"> 기타 중고물품</label></li>
+            <li><label><input type="radio" name="category"> 삽니다</label></li>
+          </ul>
+        </div>
+
+        <div class="filter-group">
+          <div class="price-buttons">
+            <button type="button">나눔</button>
+            <button type="button">5,000원 이하</button>
+            <button type="button">10,000원 이하</button>
+            <button type="button">20,000원 이하</button>
+          </div>
+          
+          <form action="#" class="price-form">
+            <div class="price-input-group">
+              <input type="number" placeholder="0">
+              <span>-</span>
+              <input type="number" placeholder="최대">
+            </div>
+              <button type="submit" class="apply-btn">적용하기</button>
+          </form>
+        </div>
+      </aside>
+      
+      <section class="product-list-container">
+
+        <div class="product-grid">
+          <article class="product-item">
+            <a href="#">
+              <div class="product-image">
+                <img src="../images/cats/cat1.jpg" alt="상품 이미지">
+              </div>
+              <div class="product-info">
+                <p class="title">고양이사진 1</p>
+                <p class="price">₩100,000</p>
+                <p class="data">역삼동, 끌올 31분 전</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-item">
+            <a href="#">
+              <div class="product-image">
+                <img src="../images/cats/cat2.jpg" alt="상품 이미지">
+              </div>
+              <div class="product-info">
+                <p class="title">고양이사진 2</p>
+                <p class="price">₩100,000</p>
+                <p class="data">역삼동</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-item">
+            <a href="#">
+              <div class="product-image">
+                <img src="../images/cats/cat3.jpg" alt="상품 이미지">
+              </div>
+              <div class="product-info">
+                <p class="title">고양이사진 3</p>
+                <p class="price">₩100,000</p>
+                <p class="data">역삼동, 끌올 3분 전</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-item">
+            <a href="#">
+              <div class="product-image">
+                <img src="../images/cats/cat4.jpg" alt="상품 이미지">
+              </div>
+              <div class="product-info">
+                <p class="title">고양이사진 4</p>
+                <p class="price">₩100,000</p>
+                <p class="data">역삼동, 끌올 1분 전</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="product-item">
+            <a href="#">
+              <div class="product-image">
+                <img src="../images/cats/cat5.jpg" alt="상품 이미지">
+              </div>
+              <div class="product-info">
+                <p class="title">고양이사진 5</p>
+                <p class="price">₩100,000</p>
+                <p class="data">역삼동, 끌올 2분 전</p>
+              </div>
+            </a>
+          </article>
+          
+        </div>
+        
+      </section>
+    </div>
+
+  </main>
+</body>
+</html>
+  
