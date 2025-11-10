@@ -15,7 +15,7 @@ i.fa-solid {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -47,7 +47,7 @@ nav.menu {
 }
 
 nav.menu a {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #f1f3f5;
   padding: 8px;
@@ -59,8 +59,8 @@ nav.menu a {
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 15px;
-  font-size: 16px;
+  padding: 7px 11px;
+  font-size: 13px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -80,8 +80,8 @@ nav.menu a {
   border: none;
   border-radius: 30px;
   color: #f1f3f5;
-  padding: 12px 18px;
-  font-size: 16px;
+  padding: 10px 15px;
+  font-size: 15px;
   cursor: pointer;
 }
 
@@ -398,7 +398,7 @@ input[type="radio"]:checked::before {
 .apply-btn {
   background: transparent;
   border: none;
-  color: #f1f3f5;
+  color: #f1f3f599;
   text-decoration: underline;
   cursor: pointer;
   padding: 0 5px;
