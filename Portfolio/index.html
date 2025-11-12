@@ -1,137 +1,150 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>개발자 전재민 포트폴리오</h1>
-        
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#education-skills">Education & Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
+      <h1>개발자 전재민 포트폴리오</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#education-skills">Education & Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section id="about">
-            <h2>About Me</h2>
-            
-            <img src="/Portfolio/image.jpg" alt="프로필 사진" class="profile-img">
-            <p>안녕하세요. 개발자 전재민입니다.</p>
-            <p>한 명의 수준 높은 개발자가 되기 위하여 항상 노력하고 있습니다.</p>
-        </section>
+      <section id="about">
+        <h2>About Me</h2>
 
-        <section id="education-skills">
-            <h2>Education & Skills</h2>
+        <img src="/Portfolio/image.jpg" alt="프로필 사진" class="profile-img" />
+        <p>안녕하세요. 개발자 전재민입니다.</p>
+        <p>한 명의 수준 높은 개발자가 되기 위하여 항상 노력하고 있습니다.</p>
+      </section>
 
-            <h3>Education</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>기간</th>
-                        <th>교육 기관</th>
-                        <th>전공 / 과정명</th>
-                        <th>상태</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2025.09 ~ 2026.02</td>
-                        <td>KH정보교육원</td>
-                        <td>Java 웹 개발자 양성과정</td>
-                        <td>수료중</td>
-                    </tr>
-                    <tr>
-                        <td>2020.03 ~ 2027.02</td>
-                        <td>한림대학교</td>
-                        <td>빅데이터전공</td>
-                        <td>재학</td>
-                    </tr>
-                </tbody>
-            </table>
+      <section id="education-skills">
+        <h2>Education & Skills</h2>
 
-            <h3>Skills</h3>
-            <ul>
-                <li>Java & Spring</li>
-                <li>Python</li>
-                <li>Oracle, MySQL</li>
-                <li>HTML / CSS / JavaScript</li>
-                <li>Git & GitHub</li>
-            </ul>
-        </section>
+        <h3>Education</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>기간</th>
+              <th>교육 기관</th>
+              <th>전공 / 과정명</th>
+              <th>상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025.09 ~ 2026.02</td>
+              <td>KH정보교육원</td>
+              <td>Java 웹 개발자 양성과정</td>
+              <td>수료중</td>
+            </tr>
+            <tr>
+              <td>2020.03 ~ 2027.02</td>
+              <td>한림대학교</td>
+              <td>빅데이터전공</td>
+              <td>재학</td>
+            </tr>
+          </tbody>
+        </table>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            
-            <article class="project-item">
-                <div class="project-content-flex"> 
-                    <img src="/Portfolio/subway.png" alt="[프로젝트 1 대표 이미지]" class="project-img">
-        
-                    <div class="project-text-wrap">
-                        <h3>공공데이터를 이용한 지하철 역별 이용객 분석 및 혼잡도 시각화</h3>
-                        <p>서울시 공공데이터를 이용하여 PCA, K-means 기술을 활용한 코드를
-                        Python, R로 작성 후 시각화, 각 클러스터의 특징 비교 후 분석
-                        </p>
-                    </div>
-                </div>
-            </article>
+        <h3>Skills</h3>
+        <ul>
+          <li>Java & Spring</li>
+          <li>Python</li>
+          <li>Oracle, MySQL</li>
+          <li>HTML / CSS / JavaScript</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </section>
 
-            <article class="project-item">
-                <div class="project-content-flex"> 
-                    <img src="/Portfolio/library.png" alt="[프로젝트 2 대표 이미지]" class="project-img">
-        
-                    <div class="project-text-wrap">
-                    <h3>도서 관리 프로젝트</h3>
-                    <p>도서 관리 시스템 개발 프로젝트로, 사용자 친화적인 인터페이스와 효율적인 데이터 관리 목표.
-                        Java와 MySQL을 활용하여 도서 추가, 삭제, 검색 기능 구현.
-                        팀원들과 협업하여 프로젝트 관리 및 버전 관리를 Git으로 수행.(가상, 진행 안 했음)
-                    </p>
-                    </div>
-                </div>
-            </article>
-        </section>
+      <section id="projects">
+        <h2>Projects</h2>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
-            
-            <form action="https://example.com/submit_form" method="POST">
-                
-                <div>
-                    <label for="name">이름</label>
-                    <input type="text" id="name" name="user_name" required>
-                </div>
-                <div>
-                    <label for="email">이메일</label>
-                    <input type="email" id="email" name="user_email" required>
-                </div>
-                <div>
-                    <label for="phone">연락처</label>
-                    <input type="tel" id="phone" name="user_phone">
-                </div>
-                
-                <div>
-                    <button type="submit" class="submit-btn">메시지 보내기</button>
-                </div>
-            </form>
-        </section>
+        <article class="project-item">
+          <div class="project-content-flex">
+            <img
+              src="/Portfolio/subway.png"
+              alt="[프로젝트 1 대표 이미지]"
+              class="project-img"
+            />
+
+            <div class="project-text-wrap">
+              <h3>
+                공공데이터를 이용한 지하철 역별 이용객 분석 및 혼잡도 시각화
+              </h3>
+              <p>
+                서울시 공공데이터를 이용하여 PCA, K-means 기술을 활용한 코드를
+                Python, R로 작성 후 시각화, 각 클러스터의 특징 비교 후 분석
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-item">
+          <div class="project-content-flex">
+            <img
+              src="/Portfolio/library.png"
+              alt="[프로젝트 2 대표 이미지]"
+              class="project-img"
+            />
+
+            <div class="project-text-wrap">
+              <h3>도서 관리 프로젝트</h3>
+              <p>
+                도서 관리 시스템 개발 프로젝트로, 사용자 친화적인 인터페이스와
+                효율적인 데이터 관리 목표. Java와 MySQL을 활용하여 도서 추가,
+                삭제, 검색 기능 구현. 팀원들과 협업하여 프로젝트 관리 및 버전
+                관리를 Git으로 수행.(가상, 진행 안 했음)
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Me</h2>
+
+        <form action="https://example.com/submit_form" method="POST">
+          <div>
+            <label for="name">이름</label>
+            <input type="text" id="name" name="user_name" required />
+          </div>
+          <div>
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="user_email" required />
+          </div>
+          <div>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" name="user_phone" />
+          </div>
+
+          <div>
+            <button type="submit" class="submit-btn">메시지 보내기</button>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Jeon Jae Min. All rights reserved.</p>
+      <p>&copy; 2025 Jeon Jae Min. All rights reserved.</p>
     </footer>
-
-</body>
+  </body>
 </html>
