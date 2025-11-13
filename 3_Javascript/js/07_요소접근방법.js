@@ -85,4 +85,52 @@ function cssTest() {
 
 }
 
+function readValue() {
+  const bg = document.querySelector("#chatting-bg");
+
+  const input = document.querySelector("#user-input");
+
+  // 입력된 값이 없을 경우
+  // 1) 아무것도 안 적은 경우
+  // 2) 공백만 입력한 경우
+  if(input.value.trim().length == 0) {  // trim() : 문자열 좌우 공백 제거
+    alert("채팅 내용을 입력해주세요.");
+    input.value = "";   // 이전 input에 작성된 값 삭제
+    input.focus();    // input에 포커스(커서) 다시 이동
+    return;
+  }
+
+  bg.innerHTML += `<p><span>${input.value}</span></p>`;
+  // bg 요소 내부에 입력된 값을 누적해서 추가해야 제대로 작동
+
+  // bg.scrollTop : 현재 스크롤 위치
+  // 스크롤이 현재 얼마만큼 내려와있는지 나타냄
+
+  // bg.scrollHeight : bg의 스크롤 전체 높이
+  // 스크롤바를 이용해 스크롤 할 수 있는 전체 높이
+  // console.log(bg.scrollTop);
+  // console.log(bg.scrollHeight);
+
+  bg.scrollTop = bg.scrollHeight;
+  // 스크롤 위치를 스크롤 전체 높이로 지정 == 스크롤을 제일 밑으로 내림
+
+  input.value = "";   // 이전 input에 작성된 값 삭제
+  input.focus();    // input에 포커스(커서) 다시 이동
+
+}
+// keyup: 눌려지던 키가 떼어졌을 때 발생하는 이벤트 (1회만 인식함)
+// keydown: 키가 눌려졌을 때 발생하는 이벤트 (누르고 있으면 무한 인식)
+document.querySelector("#user-input")
+.addEventListener("keyup", function(e) {
+  // 매개변수 e : 이벤트 객체(발생한 이벤트의 정보를 모두 담고있는 객체)
+  // console.log(e);
+
+  // e['key'] >> 매핑된 value
+  // e.key >> 매핑된 value
+  if(e.key == "Enter") {  // 눌러진 키가 Enter인 경우
+    readValue();
+  }
+
+});
+
 
