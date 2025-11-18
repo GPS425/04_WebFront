@@ -5,31 +5,39 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>practice</title>
   <style>
-        #output {
-            border: 2px solid #ccc;
-            padding: 10px;
-            min-height: 50px;
-            margin-top: 20px;
-            font-size: 16px;
-        }
-    </style>
+    #output {
+      border: 2px solid #bbb;
+      padding: 10px;
+      min-height: 100px;
+      margin-top: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="../css/JSPractice.css">
 </head>
 <body>
   <h1>JS로 동적 요소 만들어보기</h1>
   <p>너비(px) : <input type="number" id="inputWidth"></p>
   <p>높이(px) : <input type="number" id="inputHeight"></p>
-  <p>요소 내용 : <input type="text" id="inputContent"></p>
+  <p>요소 내용 : <input type="text" id="inputText"></p>
+  <p>배경 색상 : <input type="text" id="backgroundColor"></p>
+  <p>테두리 스타일 : <input type="text" id="borderStyle" value="1px solid black"></p>
   <p>글씨 색상 : <input type="text" id="inputColor"></p>
-  <p>글씨 정렬 : <input type="text" id="inputAlign"></p>
-
+  <p>글씨 크기 : <input type="number" id="inputFontSize"></p>
+  <p>글씨 가로 정렬</p>
+  <label><input type="radio" name="alignX" value="flex-start"> 좌(Left)</label>
+  <label><input type="radio" name="alignX" value="center" checked> 중앙(Center)</label>
+  <label><input type="radio" name="alignX" value="flex-end"> 우(Right)</label>
+  <p>글씨 세로 정렬</p>
+  <label><input type="radio" name="alignY" value="flex-start"> 상(Top)</label>
+  <label><input type="radio" name="alignY" value="center" checked> 중앙(Center)</label>
+  <label><input type="radio" name="alignY" value="flex-end"> 하(Bottom)</label>
+  <br><br>
   <button id="applyButton">적용</button>
 
   <hr>
 
   <h2>결과 출력</h2>
-  <div id="output">
-
-  </div>
+  <div id="output"></div>
 
   <script src="../js/JSPractice.js"></script>
   
